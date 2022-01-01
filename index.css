@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Monster-Pumpkin;
+    src: url(MonsterPumpkin-MVBzP.ttf);
+}
+
+
+:root {
+    --dark-color: #203339;
+    --light-color: #FFF;
+    --medium-color: #687C7F;
+    --pumpkin-color: orange;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/tree.jpg) no-repeat;
+    background-size: cover;
+    max-width: max-content;
+    height: 100vh;
+    margin: auto;
+    color: var(--medium-color);
+    font-family: Monster-Pumpkin;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+li {
+    font-size: 1.5em;
+}
+.main-container {
+    background: rgba(255, 255, 255, .8);
+    padding: 2em;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border: solid 10px var(--medium-color);
+    background: #FFF;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+}
+
+.snake {
+    background-color: var(--pumpkin-color);
+    
+}
+
+.pumpkin {
+    background: url(img/pumpkin.svg) no-repeat;
+    background-size: cover;
+
+}
+.ghost {
+    background: url(img/ghost.svg) no-repeat;
+    background-size: cover;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--light-color);
+    background: var(--medium-color);
+}
